@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from "./Message.module.css"
+import classes from './Message.module.css'
 
-type MessagePropsType={
+type MessagePropsType = {
     avatar: string
     name: string
     message: string
@@ -9,31 +9,22 @@ type MessagePropsType={
 }
 
 
-function Message({avatar,name, message,time}: MessagePropsType) {
+function Message({avatar, name, message, time}: MessagePropsType) {
 
     return (
         <div className={classes.wrapper}>
-            <div className={classes.content}>
-                <div className={classes.avatarContainer}>
-                    <img className={classes.avatar} src={avatar}></img>
-                </div>
-                <div className={classes.align}>
-                    <div className={classes.cornerContainer}>
-                        <div className={classes.cornerInside}></div>
-                        <div className={classes.cornerOutside}></div>
-                    </div>
-
-                    <div className={classes.container}>
-                        <div className={classes.innerAlign}>
-                            <div className={classes.name}>{name}</div>
-                            <div className={classes.messageText}>{message}</div>
-                        </div>
-                        <div className={classes.timeContainer}>
-                            <span className={classes.time}>{time}</span>
-                        </div>
-                    </div>
-                </div>
+            <div className={classes.avatarContainer}>
+                <img alt="avatar" className={classes.avatar} src={avatar}></img>
             </div>
+
+            <div className={classes.corner}></div>
+
+            <div className={classes.content}>
+                <div className={classes.name}>{name}</div>
+                <div className={classes.messageText}>{message}</div>
+                <div className={classes.time}>{time}</div>
+            </div>
+
         </div>
     )
 }

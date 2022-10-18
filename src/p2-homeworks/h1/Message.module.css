@@ -1,43 +1,13 @@
 .wrapper {
-background-color: darkkhaki;
-    display: inline-block;
+    background-color: #a8e600;
     padding: 5px 10px 8px;
     font-size: 20px;
     font-weight: 600;
-}
-.content{
     display: flex;
-    flex-direction: row;
 }
-.align{
-    display: flex;
 
-}
-.container{
-    padding: 5px 15px;
-    background-color: olivedrab;
-    display: flex;
-    column-gap: 15px;
-    border-radius: 5px 5px 5px 0;
-}
-.name{
-    color: lavender;
-}
-.messageText{
-    color: ghostwhite;
-}
-.time{
-    color: darkgreen;
-}
-.timeContainer{
-    display: flex;
-    align-items: end;
-}
-.innerAlign{
-   padding: 8px 0;
-}
-.avatarContainer{
-    height:50px;
+.avatarContainer {
+    height: 50px;
     width: 50px;
     border-radius: 50%;
     overflow: hidden;
@@ -45,29 +15,43 @@ background-color: darkkhaki;
     display: flex;
     align-items: center;
     align-self: end;
+
 }
-.avatar{
+
+.avatar {
     width: 100%;
     object-fit: cover;
 }
-.cornerInside,
-.cornerOutside{
-    height: 20px;
-    width: 20px;
 
-    align-self: end;
+.content {
+    background-color: #002107;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+}
 
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.corner {
+    width: 15px;
+    height: 15px;
+    margin: auto 0 0 0;
+    background: radial-gradient(circle at top 0 left 0, transparent 16px, #002107 0);
 }
-.cornerContainer{
-    position: relative;
+
+.name {
+    color: #877299;
 }
-.cornerInside{
-    background-color: olivedrab;
+
+.messageText {
+    color: #607a5e;
+    word-wrap: break-word;
 }
-.cornerOutside{
-    background-color: darkkhaki;
-    border-bottom-right-radius: 100%;
+
+.time {
+    color: #204321;
+    display: flex;
+    justify-content: flex-end;
 }
+
+
+
