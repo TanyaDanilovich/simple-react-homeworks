@@ -10,7 +10,7 @@ type MessagePropsType={
 
 
 function Message({avatar,name, message,time}: MessagePropsType) {
-    const image: HTMLImageElement = new Image()
+
     return (
         <div className={classes.wrapper}>
             <div className={classes.content}>
